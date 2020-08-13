@@ -1,0 +1,67 @@
+
+<html>
+  <head>
+    <title>William Bodden</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+                                                background-color:#0f0;
+      }
+      h1 {
+                     font-size: 18px;
+      }
+      a {
+                     font-size: 12px;
+      }
+                                #link1 {
+                                                color: #f00
+                                }
+                                #link2 {
+                                                color: #BAf
+                               }
+                                .class1 {
+ 
+                                }
+ 
+    </style>
+  </head>
+  <body>
+    <h1 id="h1Hi">Hello, Brandon</h1>
+ 
+<button type="button" style="padding-top:10px" onClick="sayHi()">Click Me To Say Hi</button>
+<br /><br /><br />
+ 
+    <a id="link1" href="https://www.google.com/search?q=Cayman Brac">Google Cayman Brac</a>
+    <br />
+    <a id="link2" href="https://www.google.com/?q=Cayman Brac">Google Cayman Brac</a>
+                               
+ 
+  <script>
+       function sayHi() {
+          var name = prompt('What is your name?');
+          var birthYear = prompt('what year were you born');
+          var birthMonth = prompt('what month were you born');
+
+          var currentYear = new Date().getFullYear();
+          var currentMonth = new Date().getFullMonth();
+
+          Console.log(currentYear);
+          Console.log(currentMonth);
+
+          var age = currentYear - birthYear; 
+    
+          if (birthMonth > currentMonth) {
+              age = age -1;
+          }
+
+
+         var str = 'Hi, ' + name + '!';
+         document.getElementById("h1Hi").innerHTML = str;
+ 
+                          </script>         }
+  
+  
+
+      </body>                 
+</html>
